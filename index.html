@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+  </head>
+  <body>
+    <div>Firstname</div>
+    <input type="text" id="fname" />
+    <p id="pf"></p>
+    <div>Lastname</div>
+    <input type="text" id="lname" />
+    <p id="p1"></p>
+    <div>age</div>
+    <input type="number" id="age" class="required" class="h" />
+    <p id="pa" class="a"></p>
+    <div>address</div>
+    <input type="text" id="addr" class="required" class="h" />
+    <p id="pad" class="a"></p>
+    <div>username</div>
+    <input type="text" id="uname" class="required" class="h" />
+    <p id="pu" class="a"></p>
+    <div>password</div>
+    <input type="password" id="pass" />
+    <p id="pp"></p>
+    <button type="button" id="btn">Test</button>
+
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>age</th>
+        <th>address</th>
+        <th>username</th>
+        <th>password</th>
+      </tr>
+      <tr>
+          <td id="fn"></td>
+          <td id="ln"></td>
+          <td id="ag"></td>
+          <td id="ad"></td>
+          <td id="us"></td>
+          <td id="pw"></td>
+      </tr>
+      
+    </table>
+  </body>
+</html>
