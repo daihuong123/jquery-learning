@@ -4,9 +4,9 @@ $(document).ready(function () {
     if ($("#fname").val() == "") {
       alert("nhap vao");
     }
-    // if($("#fname").val().length > 1){
-    //   $("#pf")
-    // }
+    if($("#fname").val().length > 1){
+      $("#pf").text("");
+    }
   });
   $("#lname").change(function () {
     console.log("change event");
