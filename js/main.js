@@ -115,5 +115,6 @@ $(document).ready(function () {
     if (q.length > 8) {
       $("#pw").append($("#pass").val());
     }
+	console.log('commit')
   });
 });
