@@ -5,23 +5,25 @@
 
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/javascript.js"></script>
     <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-        </style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
   </head>
   <body>
     <div>Firstname</div>
@@ -31,7 +33,7 @@
     <input type="text" id="lname" />
     <p id="p1"></p>
     <div>age</div>
-    <input type="number" id="age" class="required" class="h" />
+    <input type="text" id="age" class="required" class="h" />
     <p id="pa" class="a"></p>
     <div>address</div>
     <input type="text" id="addr" class="required" class="h" />
@@ -54,14 +56,60 @@
         <th>password</th>
       </tr>
       <tr>
-          <td id="fn"></td>
-          <td id="ln"></td>
-          <td id="ag"></td>
-          <td id="ad"></td>
-          <td id="us"></td>
-          <td id="pw"></td>
+        <td id="fn"></td>
+        <td id="ln"></td>
+        <td id="ag"></td>
+        <td id="ad"></td>
+        <td id="us"></td>
+        <td id="pw"></td>
       </tr>
-      
     </table>
+    <h2>số ra số chữ ra chữ trong mảng [1,2,3,4,5,6,"a","b","n"]</h2>
+    <p id="demo"></p>
+    <p id="de"></p>
+    <h2>xuất ra value < 4 và chữ trong mảng [1,2,3,4,5,6,"a","b","n"] </h2>
+    <p id="numb"></p>
+    <p id="word"></p>
+    <h2>các giá tri chung trong 2 mảng [1,2,3,4,5,6,"a","b","n"] và ["ABC","a",1,9,6,2]:</h2>
+    <p id="gn"></p>
+    <script>
+      var a = [1, 2, 3, 4, 5, 6, "a", "b", "n"];
+      var tex = "";
+      var num = "";
+      var so = "";
+      var wor = "";
+      for (i = 0; i < a.length; i++) {
+        if (typeof a[i] === "string") {
+          tex += a[i] + "<br>";
+        }
+        if (typeof a[i] === "number") {
+          num += a[i] + "<br>";
+        }
+        if (a[i] < 4) {
+          so += a[i] + "<br>";
+        }
+        if (typeof a[i] === "string") {
+          wor += a[i] + "<br>";
+        }
+      }
+      document.getElementById("demo").innerHTML = "so ra so :" + "<br>" + tex;
+      document.getElementById("de").innerHTML = "chu ra chu :" + "<br>" + num;
+      document.getElementById("numb").innerHTML = "gia tri < 4 :" + "<br>" + so;
+      document.getElementById("word").innerHTML = "chu:" + "<br>" + wor;
+      var f = [1, 2, 3, 4, 5, 6, "a", "b", "n"];
+var g = ["ABC","a",1,9,6,2];
+var same = "";
+var t;
+var y;
+
+for (t = 0; t < f.length; t++) {
+     for (y = 0; y < g.length; y++) {
+     	if(f[t] == g[y]){
+        	same += f[t] + "<br>";
+        }
+     }
+ }
+document.getElementById("gn").innerHTML = "các số giống nhau:" + "<br>" +same;
+    </script>
   </body>
 </html>
