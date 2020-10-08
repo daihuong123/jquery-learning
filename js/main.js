@@ -84,17 +84,36 @@ $(document).ready(function () {
   $("#btn").click(function (){ 
     debugger
    
-    for(i = 1; i < 2; i++)
+    for(i = 1; i < 7; i++)
     {
-      var q = $("#pass").val();
-      if (q.length > 8) {
-        $("#pw").append($("#pass").val());
-      }
       var h = $("#uname").val();
-      if (5 < h.length && h.length < 10) {
-        $("#us").append($("#uname").val());
-      }
-      return
+    if (h == "") {
+      $("#pu").text("ko bo trong");
+      return;
+    }
+    if (h.length < 5) {
+      $("#pu").text("nhap tren 5");
+    }
+    if (h.length > 10) {
+      $("#pu").text("nhap duoi 10");
+    }
+    if (5 < h.length && h.length < 10) {
+      $("#pu").text("");
+    }
+    var q = $("#pass").val();
+    if (q == "") {
+      $("#pp").text("ko bo trong");
+      return;
+    }
+
+    if (0 < q.length < 8) {
+      $("#pp").text("nhap nhieu hon 8 ki tu");
+    }
+    if (q.length > 8) {
+      $("#pp").text("");
+    }
+    $("#us").append($("#uname").val());
+    $("#pw").append($("#pass").val());
     }
     // var h = $("#uname").val();
     // if (h == "") {
