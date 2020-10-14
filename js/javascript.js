@@ -4,7 +4,7 @@ var num = "";
 var so = "";
 var wor = "";
 var i = 0;
-do {
+function numnstr(){do {
   if (typeof a[i] === "string") {
     tex += a[i] + "<br>";
   }
@@ -22,12 +22,13 @@ do {
 document.getElementById("demo").innerHTML = "so ra so :" + "<br>" + tex;
 document.getElementById("de").innerHTML = "chu ra chu :" + "<br>" + num;
 document.getElementById("numb").innerHTML = "gia tri < 4 :" + "<br>" + so;
-document.getElementById("word").innerHTML = "chu:" + "<br>" + wor;
+document.getElementById("word").innerHTML = "chu:" + "<br>" + wor;}
+numnstr();
 var f = [1, 2, 3, 4, 5, 6, "a", "b", "n"];
 var g = ["ABC", "a", 1, 9, 6, 2];
 var same = "";
 var t = 0;
-do {
+function twoarray(){ do {
   var y = 0;
   do {
     if (f[t] == g[y]) {
@@ -37,7 +38,8 @@ do {
   } while (y < g.length);
   t++;
 } while (t < f.length);
-document.getElementById("gn").innerHTML = "các số giống nhau:" + "<br>" + same;
+document.getElementById("gn").innerHTML = "các số giống nhau:" + "<br>" + same;}
+twoarray();
 // var f = [1, 2, 3, 4, 5, 6, "a", "b", "n"];
 // var g = ["ABC", "a", 1, 9, 6, 2];
 // var same = "";
@@ -72,7 +74,7 @@ var songuyen = "";
 // }
 var k = 2;
 var count = 0;
-do {
+function primenumber(){ do {
   count = 0;
   var l = 2;
   do {
@@ -104,4 +106,5 @@ do {
 //   }
 //   k++;
 // }
-document.getElementById("ss").innerHTML = songuyen;
+document.getElementById("ss").innerHTML = songuyen;}
+primenumber();
