@@ -1,4 +1,9 @@
-// var button = document.getElementById("btn2");
+document.getElementById("btn2").addEventListener("click", generatediv);
+function generatediv() {
+  var div = document.createElement("div");
+  div.innerHTML = "created div";
+  document.body.appendChild(div);
+}
 var a = [1, 2, 3, 4, 5, 6, "a", "b", "n"];
 var tex = "";
 var num = "";
@@ -68,21 +73,22 @@ var songuyen = "";
 var k,
   l,
   count = 0;
-  document.getElementById("f4").addEventListener("keyup", primenumber3);
-  function primenumber3(){
-for (k = 2; k <= 30; k++) {
-  count = 0;
-  for (l = 2; l <k; l++) {
-    if (k % l == 0) {
-      count++;
-      break;
+document.getElementById("f4").addEventListener("keyup", primenumber3);
+function primenumber3() {
+  for (k = 2; k <= 30; k++) {
+    count = 0;
+    for (l = 2; l < k; l++) {
+      if (k % l == 0) {
+        count++;
+        break;
+      }
+    }
+    if (count == 0) {
+      songuyen += +k + "<br>";
     }
   }
-  if (count == 0) {
-    songuyen += +k + "<br>";
-  }
+  document.getElementById("ssss").innerHTML = songuyen;
 }
-document.getElementById("ssss").innerHTML = songuyen;}
 var k = 2;
 var count = 0;
 document.getElementById("ss").addEventListener("click", primenumber);
