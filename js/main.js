@@ -2,7 +2,7 @@ $(document).ready(function () {
   console.log("jquery start");
   $("#fname").blur(function () {
     if ($("#fname").val() == "") {
-      alert("nhap vao");
+      alert("enter");
     }
     if ($("#fname").val().length > 1) {
       $("#pf").text("");
@@ -11,12 +11,12 @@ $(document).ready(function () {
   $("#lname").change(function () {
     console.log("change event");
     if ($("#lname").val() == "") {
-      $("#p1").text("nhap vao");
+      $("#p1").text("enter");
     }
 
     var n = $("#lname").val();
     if (0 < n.length && n.length < 4) {
-      $("#p1").text("nhap lai");
+      $("#p1").text("enter againt");
     }
     if (n.length >= 4) {
       $("#p1").text("");
@@ -24,32 +24,32 @@ $(document).ready(function () {
   });
   $("#age").blur(function () {
     if ($("#age").val() == "") {
-      $("#pa").text("khong de trong");
+      $("#pa").text("enter againt");
       return;
     }
     var x = $("#age").val();
     if (5 < x && x < 20) {
-      $("#pa").text("tre em");
+      $("#pa").text("child");
       return;
     }
     if (x != Number) {
-      $("#pa").text("ko nhap chu");
+      $("#pa").text("dont enter word");
     }
     if (x >= 20) {
-      $("#pa").text("nguo i lon");
+      $("#pa").text("Adults");
     }
     if (x <= 5) {
-      $("#pa").text("ko hop le");
+      $("#pa").text("illegal");
     }
   });
   $("#addr").blur(function () {
     if ($("#addr").val() == "") {
-      $("#pad").text("ko bo trong");
+      $("#pad").text("enter againt");
       return;
     }
     var t = $("#addr").val();
     if (t.length > 25) {
-      $("#pad").text("nhap lai nho hon 25 ki tu");
+      $("#pad").text("Enter less than 25 characters");
     }
     if (25 > t.length > 0) {
       $("#pad").text("");
@@ -58,11 +58,11 @@ $(document).ready(function () {
   $("#uname").keyup(function () {
     var h = $("#uname").val();
     if (h == "") {
-      $("#pu").text("ko bo trong");
+      $("#pu").text("enter againt");
       return;
     }
     if (h.length < 5) {
-      $("#pu").text("nhap tren 5");
+      $("#pu").text("Enter over 5 characters");
     }
     if (h.length > 10) {
       $("#pu").text("nhap duoi 10");
@@ -150,3 +150,4 @@ $(document).ready(function () {
     }
   });
 });
+
