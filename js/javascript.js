@@ -23,22 +23,22 @@
 //   }
 // }
 
-;
-
- function aumm() {
-  // var n = 3 ;
-var n= document.getElementById("sum").nodeValue() ;
-
+function aumm(n) {
+  // var n = document.getElementById("sum").value;
   var sum = 0;
-  for (var i = 0; i <= n; i++) 
-    sum += i;
-    return sum;
-  
-  // document.getElementById("#idsum").innerHTML = "asdasd" + "<br>" + sum;
-  
-}
-document.write("Sum: " + aumm())
-// 
-// function main(){
 
-// }
+  for (var i = 0; i <= n; i++) sum += i;
+
+  return sum;
+
+  // document.getElementById("idsum").innerHTML = "asdasd" + "<br>" + sum;
+}
+
+// document.write("Sum: " + aumm())
+
+//
+function main() {
+  var n = document.getElementById("sum").value;
+  // document.write("Sum: " + aumm(n));
+  document.getElementById("idsum").innerHTML = "Sum: "  + aumm(n);
+}
