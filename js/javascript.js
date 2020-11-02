@@ -23,22 +23,43 @@
 //   }
 // }
 
-function aumm(n) {
-  // var n = document.getElementById("sum").value;
-  var sum = 0;
+// function aumm(n) {
+//   // var n = document.getElementById("sum").value;
+//   var sum = 0;
 
-  for (var i = 0; i <= n; i++) sum += i;
+//   for (var i = 0; i <= n; i++) sum += i;
 
-  return sum;
+//   return sum;
 
-  // document.getElementById("idsum").innerHTML = "asdasd" + "<br>" + sum;
-}
+//   // document.getElementById("idsum").innerHTML = "asdasd" + "<br>" + sum;
+// }
 
-// document.write("Sum: " + aumm())
+// // document.write("Sum: " + aumm())
 
-//
-function main() {
-  var n = document.getElementById("sum").value;
-  // document.write("Sum: " + aumm(n));
-  document.getElementById("idsum").innerHTML = "Sum: "  + aumm(n);
+// //
+// function main() {
+//   var n = document.getElementById("sum").value;
+//   // document.write("Sum: " + aumm(n));
+//   document.getElementById("idsum").innerHTML = "Sum: "  + aumm(n);
+// }
+function tinhtb() {
+  var t = document.getElementById("idtoan");
+  var v = document.getElementById("idvan");
+  if (t.value == "" && v.value == "") {
+    alert("enter");
+  } else if (t.value == "") {
+    alert("chua nhap diem toan");
+  } else if (v.value == "") {
+    alert("chua nhap diem van");
+  } else if (isNaN(t.value) && isNaN(v.value)) {
+    alert("nhap ki tu la so lai");
+  } else if (isNaN(t.value)) {
+    alert("nhap ki tu la so lai");
+  } else if (isNaN(v.value)) {
+    alert("nhap ki tu la so lai");
+  }
+  var dtb = document.getElementById("iddtb");
+  dtb = (parseInt(t.value) + parseInt(v.value)) / 2;
+
+  document.getElementById("iddtb").innerHTML = dtb;
 }

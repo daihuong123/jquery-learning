@@ -8,7 +8,7 @@
   
 
     <style>
-      table {
+      /* table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 100%;
@@ -23,12 +23,16 @@
 
       tr:nth-child(even) {
         background-color: #dddddd;
-      }
+      } */
+  
+.cot{
+ border: none;
+}
     </style>
   </head>
   
   <body>
-    <div>Firstname</div>
+    <!-- <div>Firstname</div>
     <input type="text" id="fname" />
     <p id="pf"></p>
     <div>Lastname</div>
@@ -65,13 +69,35 @@
         <td id="us"></td>
         <td id="pw"></td>
       </tr>
-    </table>
-
+    </table> -->
+<table>
+  <tr>
+    <td class="cot">toán</td>
+    <td class="cot"><input type="text" id="idtoan" ></td>
+    <td class="cot"><p id="ptb"></p></td>
+    
+  </tr>
+  </tr>
+  <tr>
+    <td class="cot">văn</td>
+    <td class="cot">
+    <input type="text" id="idvan"></td>
+  <tr>
+    <td>điểm TB: </td>
+    <td class="cot">
+    <p type="text" value="" id="iddtb" ></p></td>
+    
+  </tr>
+  <tr>
+    <td class="cot">
+  <button id="btntb" onclick="tinhtb()">tính tb</button></td>
+</tr>   
+</table>
   
-    <button onclick="main()">Sum(n)</button>
+    <!-- <button onclick="main()">Sum(n)</button>
    <input type="text" id="sum" name="number" >
 
-    <div id="idsum"></div>
+    <div id="idsum"></div> -->
   
   </body>
   <script src="js/main.js"></script>
