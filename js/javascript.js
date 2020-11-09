@@ -42,24 +42,52 @@
 //   // document.write("Sum: " + aumm(n));
 //   document.getElementById("idsum").innerHTML = "Sum: "  + aumm(n);
 // }
-function tinhtb() {
-  var t = document.getElementById("idtoan");
-  var v = document.getElementById("idvan");
-  if (t.value == "" && v.value == "") {
-    alert("enter");
-  } else if (t.value == "") {
-    alert("chua nhap diem toan");
-  } else if (v.value == "") {
-    alert("chua nhap diem van");
-  } else if (isNaN(t.value) && isNaN(v.value)) {
-    alert("nhap ki tu la so lai");
-  } else if (isNaN(t.value)) {
-    alert("nhap ki tu la so lai");
-  } else if (isNaN(v.value)) {
-    alert("nhap ki tu la so lai");
-  }
-  var dtb = document.getElementById("iddtb");
-  dtb = (parseInt(t.value) + parseInt(v.value)) / 2;
+// function tinhtb() {
+//   var t = document.getElementById("idtoan");
+//   var v = document.getElementById("idvan");
+// if (t.value == "" && v.value == "") {
+//   alert("enter");
+// } else if (t.value == "") {
+//   alert("chua nhap diem toan");
+// } else if (v.value == "") {
+//   alert("chua nhap diem van");
+// } else if (isNaN(t.value) && isNaN(v.value)) {
+//   alert("nhap ki tu la so lai");
+// } else if (isNaN(t.value)) {
+//   alert("nhap ksNaN(t.value)i tu la so lai");
+// } else if (isNaN(v.value)) {
+//   alert("nhap ki tu la so lai");
+// }
+//   switch(t.value&&v.value){
 
-  document.getElementById("iddtb").innerHTML = dtb;
+//     case :
+//       alert("chua nhap diem toan");
+//       break;
+//   }
+
+//   var dtb = document.getElementById("iddtb");
+//   dtb = (parseInt(t.value) + parseInt(v.value)) / 2;
+
+//   document.getElementById("iddtb").innerHTML = dtb;
+// }
+function switchcase() {
+  var a = document.getElementById("test");
+  switch (a.value)
+   {
+    case "0": 
+    case "1": 
+    case "2": 
+    case "3": 
+    case "4": 
+    case "5": 
+    case "6": 
+    case "7": 
+    case "8": 
+    case "9": 
+      document.getElementById("idp").innerHTML = a.value;
+      break;
+    default: {
+      alert("khong phai so");
+    }
+  }
 }
