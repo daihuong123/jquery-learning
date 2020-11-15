@@ -58,13 +58,20 @@ function tinhtb() {
 // } else if (isNaN(v.value)) {
 //   alert("nhap ki tu la so lai");
 // }
-  switch(t.value && v.value){
+  switch(t.value || v.value){
 
     case "":
       alert("chua nhap diem");
       break;
+      
+   
+ case "0": case "1": case "2": case "3": case "4": case "5": case "6": case "7": case "8": case "9": case "10":
+    document.getElementById("iddtb").innerHTML = dtb;
+      break;
+
+
     default: {
-            alert("nhap ki tu la so lai");
+      alert("nhap ki tu la so lai hoac duoi 10 ");
     }
   }
 
