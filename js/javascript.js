@@ -42,9 +42,9 @@
 //   // document.write("Sum: " + aumm(n));
 //   document.getElementById("idsum").innerHTML = "Sum: "  + aumm(n);
 // }
-// function tinhtb() {
-//   var t = document.getElementById("idtoan");
-//   var v = document.getElementById("idvan");
+function tinhtb() {
+  var t = document.getElementById("idtoan");
+  var v = document.getElementById("idvan");
 // if (t.value == "" && v.value == "") {
 //   alert("enter");
 // } else if (t.value == "") {
@@ -58,36 +58,39 @@
 // } else if (isNaN(v.value)) {
 //   alert("nhap ki tu la so lai");
 // }
-//   switch(t.value&&v.value){
+  switch(t.value && v.value){
 
-//     case :
-//       alert("chua nhap diem toan");
-//       break;
-//   }
-
-//   var dtb = document.getElementById("iddtb");
-//   dtb = (parseInt(t.value) + parseInt(v.value)) / 2;
-
-//   document.getElementById("iddtb").innerHTML = dtb;
-// }
-function switchcase() {
-  var a = document.getElementById("test");
-  switch (a.value)
-   {
-    case "0": 
-    case "1": 
-    case "2": 
-    case "3": 
-    case "4": 
-    case "5": 
-    case "6": 
-    case "7": 
-    case "8": 
-    case "9": 
-      document.getElementById("idp").innerHTML = a.value;
+    case "":
+      alert("chua nhap diem");
       break;
     default: {
-      alert("khong phai so");
+            alert("nhap ki tu la so lai");
     }
   }
+
+  var dtb = document.getElementById("iddtb");
+  dtb = (parseInt(t.value) + parseInt(v.value)) / 2;
+
+  document.getElementById("iddtb").innerHTML = dtb;
 }
+// function switchcase() {
+//   var a = document.getElementById("test");
+//   switch (a.value)
+//    {
+//     case "0": 
+//     case "1": 
+//     case "2": 
+//     case "3": 
+//     case "4": 
+//     case "5": 
+//     case "6": 
+//     case "7": 
+//     case "8": 
+//     case "9": 
+//       document.getElementById("idp").innerHTML = a.value;
+//       break;
+//     default: {
+//       alert("khong phai so");
+//     }
+//   }
+// }
