@@ -208,7 +208,7 @@
   },
   {
     "id": 10,
-    "name": "Clementina DuBuque",
+    "name": "Dai Huong",
     "username": "Moriah.Stanton",
     "email": "Rey.Padberg@karina.biz",
     "address": {
@@ -227,28 +227,6 @@
       "name": "Hoeger LLC",
       "catchPhrase": "Centralized empowering task-force",
       "bs": "target end-to-end models"
-    },
-     {
-    "id": 11,
-    "name": "dai huong",
-    "username": "dai.huong",
-    "email": "daihuong@gmail.com",
-    "address": {
-      "street": "hcm",
-      "suite": "172 tnv",
-      "city": "thu duc",
-      "zipcode": "7000000",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
-    },
-    "phone": "0778978926",
-    "website": "huongdai.net",
-    "company": {
-      "name": "dxc",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    },
+    }
   }
 ]
